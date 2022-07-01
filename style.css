@@ -1,0 +1,190 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    /* font-family: 'Josefin Sans', sans-serif; */
+}
+/*header section */
+header{
+    width: 100%; height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(image/imageesss.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+
+/* navigation section */
+nav{
+    width: 100%; height: 15vh;
+    background:rgba(0,0,0,0.2);
+    color: white; display: flex; justify-content: space-between; align-items: center;
+    
+}
+
+nav .logo{
+ width: 25%;
+text-align: center;
+}
+nav .menu{
+    width: 40%;
+    display: flex; justify-content: space-around;
+    font-family: cursive;
+}
+ .menu a:hover{
+    background-color: gold;
+
+    
+
+}
+ 
+
+nav .menu a{
+    width: 25%;text-decoration: none; color: white;
+    font-weight: bold;
+}
+nav .menu a:first-child{
+    color:blueviolet;
+}
+nav .menu a:last-child{
+    color: red;
+}
+
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; color:white;
+
+}
+
+section h3{
+    font-size: 35px; font-weight: 200; letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+   color: orange; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+h1{
+    color: aquamarine;
+}
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: upercase;
+    color: aqua;
+}
+
+section p{
+    font-size: 25px; word-spacing: 2px; margin-bottom: 25px; text-shadow: 1px 1px 1px black;
+    color:rgb(50, 205, 179); font-family:'Courier New', Courier, monospace;
+}
+section a{
+    padding: 12px 30px; border-radius: 4px; outline:none; text-transform: uppercase;
+    font-size: 13px; font-weight: 500;text-decoration: none;letter-spacing: 1px;
+    transition: all .5s ease;
+}
+section .btnone{
+    background:blueviolet;
+    color: black;
+    font-weight: bold;
+}
+section .btntwo{
+    background:green;
+    color: white;
+    font-weight: bold;
+}
+.btnone:hover{
+    background:green;
+    color: white;
+    font-weight: bold;
+}
+.btntwo:hover{
+    background: #fff;
+    color: black;
+    font-weight: bold;  
+}
+
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: red;
+}
+
+/* chnage text*/
+
+@keyframes changetext{
+
+    0%{content:"Bihar";}
+    20%{content:"Punjab";}
+    40%{content:"Rajasthan";}
+    60%{content:"Mumbai";}
+    80%{content:"Delhi";}
+    100%{content:"Kolkata";}
+}
+
+.footer-basic {
+    padding:40px 0;
+    background:LightGray;
+    color:black;
+    font-weight: bold;
+  
+    
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    /* opacity:0.8; */
+  }
+  
+  .footer-basic ul a:hover {
+    /* opacity:1; */
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    /* opacity:0.75; */
+  }
+  
+  .footer-basic .social > a:hover {
+    /* opacity:0.9; */
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:black;
+    margin-bottom:0;
+  }
